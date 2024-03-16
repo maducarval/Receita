@@ -67,4 +67,7 @@ footer a{
     .menu__principal li{
         display: none;
     }
+    .heading h2{
+        display: none;
+    }
 }
