@@ -1,58 +1,97 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
-    <title>Bolo de milho</title>
+    <link rel="shortcut icon" type="image/png" href="src/favicon_io/favicon-32x32.png" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Duda Receitas</title>
 </head>
-
 <body>
-    <div class="receita">
-    <h1>BOLO DE MILHO CREMOSO</h1>
-
-    <figure>
-        <img src="bolo.jpg" alt="receita de bolo de milho">
-        <figcaption>Receita Bolo de Milho Cremoso</figcaption>
-    </figure>
-    <div>
-        <h2>INGREDIENTES:</h2>
+    <nav class="menu__principal">
+        <img style="height: 80px;" src="src/logo.png" alt="">
         <ul>
-            <li>1 lata de milho com líquido</li>
-            <li>1 xícara de óleo</li>
-            <li>2 xícaras de açúcar branco</li>
-            <li>3 ovos</li>
-            <li>1 xícara de leite de coco</li>
-            <li>2 xícaras de queijo parmesão</li>
-            <li>1 colher de fermento</li>
-            <li>1 xícara de trigo</li>
-            <li>1 xícara de fubá</li>
-            <li>1 xícara de coco ralado</li>
+            
+            <li><a href="index.html">Página inicial</a></li>
+            <li><a href="boloDeMilho.html">Bolo de boloMilho</a></li>
+            <li><a href="boloMesclado.html">Bolo Mesclado</a></li>
+            <li><a href="Cookies.html">Cookies</a></li>
+            <li><a href="PanquecaAmericana.html">Panqueca Americana</a></li>
+            <li><a href="PanquecaFit.html">Panqueca Fit</a></li>
         </ul>
-    </div>
-    <div>
-        <h2>MODO DE PREPARO:</h2>
-        <ol>
-            <li>Em um liquidificador, bata o milho com líquido, óleo (não pode trocar por manteiga e margarina, porque
-                ele deixa a massa fofa), ovos, açúcar.</li>
-            <li>Quando estiver bem incorporado, adicione o queijo, leite de coco e coco ralado, bata novamente.</li>
-            <li>Leve esta mistura para uma vasilha e adicione o trigo e fubá.</li>
-            <li>Agora que mexeu, adicione o fermento e leve para assar em forno pré-aquecido em 180 graus por cerca de
-                60 minutos.</li>
-        </ol>
-    </div>
-    <div>
-        <h2>DICA:</h2>
-        <p>Passe o trigo em uma peneira para que a massa fique ainda mais macia.
-            Não troque o óleo por manteiga ou margarina.</p>
-    </div>
-</div>
-    <footer>
 
-        <p>Feito por Madu ♡ <a href="https://github.com/maducarval/">MaduCarval</a></p>
-    </footer>
+    </nav>
+
+    <section id="items">
+        <div class="container">
+            <div class="heading">
+                <h2>Receitas</h2>
+            </div>
+
+            <div class="row text-center text-lg-left">
+
+                <div class="col-lg-3 col-md-4 col-6">
+                    <a href="boloDeMilho.html" class="nome_receita">
+                        <img class="img-fluid" src="src/bolo.jpg">
+                        <div>
+                            <h5>Bolo de Milho</h5>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col-lg-3 col-md-4 col-6">
+                    <a href="boloMesclado.html" class="nome_receita">
+                        <img class="img-fluid" src="src/boloMesclado.jpg">
+                        <div>
+                            <h5>Bolo Mesclado</h5>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-3 col-md-4 col-6">
+                    <a href="Cookies.html" class="nome_receita">
+                        <img class="img-fluid" src="src/cookie.jpg">
+                        <div>
+                            <h5>Cookies</h5>
+                        </div>
+                    </a>
+
+                </div>
+                <div class="col-lg-3 col-md-4 col-6">
+
+                    <a href="PanquecaAmericana.html" class="d-block mb-4 h-100 nome_receita" >
+                        <img class="img-fluid" src="src/panquecaAmericana.jpg">
+                        <div>
+                            <h5>Panqueca Americana</h5>
+                        </div>
+                    </a>
+
+                </div>
+                <div class="col-lg-3 col-md-4 col-6">
+                    <a href="PanquecaFit.html" class="d-block mb-4 h-100 nome_receita">
+                        <img class="img-fluid" src="src/panquecaFit.jpg">
+                        <div>
+                            <h5>Panqueca FIT</h5>
+                        </div>
+                    </a>
+                </div>
+                <!-- <div class="col-lg-3 col-md-4 col-6">
+                    <a href="PanquecaFit.html" class="d-block mb-4 h-100 nome_receita">
+                        <img class="img-fluid" src="src/panquecaFit.jpg">
+                        <div>
+                            <h5>Panqueca FIT</h5>
+                        </div>
+                    </a>
+                </div> -->
+            </div>
+        </div>
+        <footer>
+            <p>Feito por Madu ♡ <br><a href="https://github.com/maducarval/"> MaduCarval</a></p>
+        </footer>
 
 </body>
 

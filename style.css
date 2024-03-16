@@ -1,81 +1,70 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-:root {
-    --fonte: 'Roboto', sans-serif;
-    --fundo: #F8E559;
-    --fundo-receita: #F6F7C4;
-    --titulos: #1B1B1B;
-    --footer-legandaImagem: #8F8F8F;
-    --texto: #39393A;
-}
-
-body {
+.menu__principal {
+    background-color: #FFF67E;
     display: flex;
-    flex-direction: column;
+    justify-content: center;
     align-items: center;
-    font-family: var(--fonte);
-    background: var(--fundo);
-}
-.receita{
-    margin-top: 30px;
-    width: 70%;
-    padding: 80px;
-    border-radius: 30px;
-    background: var(--fundo-receita);
-    
 }
 
-h1 {
-    font-size: 28px;
-    color: var(--titulos);
-    text-align: center;
+li {
+    display: inline-block;
+    margin: 10px;
+}
+
+li a {
+    color: #383838;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+li a:hover,
+a.nome_receita:hover, footer a:hover{
+    text-decoration: none;
+    color: #9B4444;
+}
+
+.heading {
+    color: #fff01d;
+    display: flex;
+    justify-content: center;
     padding: 20px;
 }
 
-img {
-    width: 100%;
-    height: 250px;
-    border-radius:10px;
-}
-
-h2 {
-    font-size: 20px;
-    color: var(--titulos);
+a.nome_receita {
+    color: #000;
+    text-decoration: none;
     text-align: center;
-    padding: 20px;
 }
-
-li p {
-    font-size: 16px;
-    color: var(--texto);
-
-}
-
-ul {
-    line-height: 26px;
-    list-style-position: inside;
-}
-
-ol {
-    line-height: 26px;
-    list-style-position: outside;
-}
-
 footer {
     font-size: 15px;
-    color: var(--texto);
-    margin:30px ;
+    color: #eda4cf;
+    margin: 30px;
+    text-align: center;
 }
-figcaption{
-    font-size: 12px;
-    color: var(--texto);
-    text-align: end;
+footer a{
+    color: #383838;
 }
-a {
-    text-decoration: none;
-    color: #F28585;
+
+/* Media Query para ajustar o layout em telas menores */
+@media screen and (max-width: 768px) {
+    .menu__principal {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    li {
+        margin: 5px;
+    }
+
+    li a {
+        padding: 5px;
+    }
+    ul{
+        padding-left: 0px;
+    }
+    .menu__principal li{
+        display: none;
+    }
 }
