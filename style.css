@@ -48,7 +48,17 @@ footer {
 footer a{
     color: #383838;
 }
+.imagem{
+    width: 300px;
+    height: 166px;
+    object-fit: scale-down;
+}
 
+.receita_grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+}
 /* Media Query para ajustar o layout em telas menores */
 @media screen and (max-width: 768px) {
     .menu__principal {
